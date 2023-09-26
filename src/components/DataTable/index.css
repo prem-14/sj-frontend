@@ -1,0 +1,20 @@
+.MuiDataGrid-root--densityStandard .tableimage {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.MuiDataGrid-root--densityCompact .tableimage {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.MuiDataGrid-root--densityComfortable .tableimage {
+  width: 75px;
+  height: 75px;
+  border-radius: 10px;
+  object-fit: cover;
+}
