@@ -7,6 +7,7 @@ import { productReducer } from './slice/product'
 import { globalReducer } from './slice/global'
 import { authsApi } from './apis/authApis'
 import { usersApi } from './apis/usersApi'
+import { packagesApi } from './apis/packagesApi'
 
 export const store = configureStore({
   reducer: {
@@ -17,10 +18,11 @@ export const store = configureStore({
     dummy: dummyReducer,
     [authsApi.reducerPath]: authsApi.reducer,
     [usersApi.reducerPath]: usersApi.reducer,
+    [packagesApi.reducerPath]: packagesApi.reducer,
   },
   devTools: true,
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(authsApi.middleware).concat(usersApi.middleware)
+    return getDefaultMiddleware().concat(authsApi.middleware).concat(usersApi.middleware).concat(packagesApi.middleware)
   },
 })
 

@@ -1,14 +1,14 @@
 export const SITE_NAME = 'SJ Innovation'
 
 export const SIDE_PANEL = [
-  {
-    label: 'Dashboard',
-    path: '/dashboard',
-    type: 'single',
-  },
+  // {
+  //   label: 'Dashboard',
+  //   path: '/dashboard',
+  //   type: 'single',
+  // },
   {
     label: 'Users',
-    path: '/users',
+    path: '/',
     type: 'single',
   },
   {
